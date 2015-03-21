@@ -56,12 +56,8 @@ complete.set<-rbind(train.set,test.set)
 tidy.set <- complete.set[, grep("id|activity|mean|std", colnames(complete.set))]
 
 ##############Overall Means and Sd's
-summarize(tidy.set)
-statsBy(tidy.set, list(tidy.set$id, tidy.set$activity.code), stats(means))
-sum.set<-describeBy(tidy.set, list(tidy.set$id, tidy.set$activity.code))   
-by(tidy.set[,1:2], tapply(tidy.set,FUN=mean, na.rm=TRUE) )
-by(tidy.set[,1:2], sapply(tidy.set, mean, na.rm=TRUE))
-sum.set<-sapply(tidy.set, mean, na.rm=TRUE, by=list(tidy.set$id))
 sum.set <- aggregate(tidy.set[grep(".mean|.std", colnames(tidy.set))], 
                        list(id = tidy.set$id, activity = tidy.set$activity.code), 
                        FUN="mean")
+#############Output dataset
+write.table(sum.set, file="summaryset.txt", row.name=FALSE)
