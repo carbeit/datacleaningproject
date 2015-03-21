@@ -181,4 +181,3 @@ id: the participant id
 activity.code: a factor variable of the 6 activities the participants engaged in. this is the only non-numeric variable.
 Variables in columns 3 through 81, are the means of the variables described on ines 143-169.
 ******************************************************************************************
-
