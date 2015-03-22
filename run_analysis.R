@@ -1,3 +1,5 @@
+###User must set working directory (setwd) to the "UC HAR Dataset" folder on their machine
+
 ##############Load the general labels 
 variable.names<-read.table ("features.txt")
 labels<-read.table("activity_labels.txt")
@@ -26,7 +28,7 @@ test.set$activity.code<-factor(test.set$activity.code, levels = c(1,2,3,4,5,6) ,
                                labels=c("walking", "walking_upstairs", "walking_downstairs",
                                       "sitting", "standing", "laying"))
 
-setwd("~/Dropbox/Data Science MOOC/R Homework/Course project/UCI HAR Dataset")
+setwd("..")
 ########Load the train Data with the same steps as used with the test data
 setwd("train")
 ##Load the train data
