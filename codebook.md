@@ -305,6 +305,7 @@ www.smartlab.ws
 
 **The "run_analysis.R" file creates 2 datasets in R, a "tidy.set" and a "sum.set".**
 
+<<<<<<< HEAD
 ******************************************************************************************
 
 The first dataset, named "tidy.set" contains 81 variables from the orignal data
@@ -590,4 +591,4 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-The complete list of variables of each feature vector is available in 'features.txt'
+
