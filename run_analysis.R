@@ -60,4 +60,4 @@ sum.set <- aggregate(tidy.set[grep(".mean|.std", colnames(tidy.set))],
                        list(id = tidy.set$id, activity = tidy.set$activity.code), 
                        FUN="mean")
 #############Output dataset
-write.table(sum.set, file="summaryset.txt", row.name=FALSE)
+write.table(sum.set, file="summaryset.txt", row.names=FALSE)

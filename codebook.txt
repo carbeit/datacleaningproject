@@ -137,33 +137,89 @@ The 81 variables are
 id: the participant id
 activity.code: a factor variable of the 6 activities the participants engaged in. this is the only non-numeric variable.
 
-For each of the following, there are separate variables for the mean, standard deviation and mean frequencies (number of cases that are included in the mean) from the original data,
-indicated by mean() and std() in the variable name:
-
-(-XYZ demotes three different variables with a one letter suffix demoting the 3-axial signals in the X, Y and Z directions)
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
-
-For example, the first 6 variables are
-
-tBodyAcc-mean()-X :The mean body acceleration in the X direction
-tBodyAcc-mean()-Y :The mean body acceleration in the Y direction
-tBodyAcc-mean()-Z :The mean body acceleration in the Z direction
+Column	|	Variable Name	|	Description	|	Units	|	Type
+---	|	---	|	---	|	-----	|	---
+1	|	id	|	the participant id	|	Numbers	|	Numeric
+2	|	activity.code	|	factor variable of the 6 activities the participants engaged in.	|	Factor (6 levels)	|	Factor
+3	|	tBodyAcc.mean...X	|	the mean body accelerometer measures in the X direction	|	Time	|	Numeric
+4	|	tBodyAcc.mean...Y	|	the mean body accelerometer measures in the Y direction	|	Time	|	Numeric
+5	|	tBodyAcc.mean...Z	|	the mean body accelerometer measures in the Z direction	|	Time	|	Numeric
+6	|	tBodyAcc.std...X	|	the standard deviation body accelerometer measures in the X direction	|	Time	|	Numeric
+7	|	tBodyAcc.std...Y	|	the standard deviation body accelerometer measures in the Y direction	|	Time	|	Numeric
+8	|	tBodyAcc.std...Z	|	the standard deviation body accelerometer measures in the Z direction	|	Time	|	Numeric
+9	|	tGravityAcc.mean...X	|	the mean gravity accelerometer measures in the X direction	|	Time	|	Numeric
+10	|	tGravityAcc.mean...Y	|	the mean gravity accelerometer measures in the Y direction	|	Time	|	Numeric
+11	|	tGravityAcc.mean...Z	|	the mean gravity accelerometer measures in the Z direction	|	Time	|	Numeric
+12	|	tGravityAcc.std...X	|	the standard deviation gravity accelerometer measures in the X direction	|	Time	|	Numeric
+13	|	tGravityAcc.std...Y	|	the standard deviation gravity accelerometer measures in the Y direction	|	Time	|	Numeric
+14	|	tGravityAcc.std...Z	|	the standard deviation gravity accelerometer measures in the Z direction	|	Time	|	Numeric
+15	|	tBodyAccJerk.mean...X	|	the mean body linear acceleration and angular velocity (jerk) in the X direction	|	Time	|	Numeric
+16	|	tBodyAccJerk.mean...Y	|	the mean body linear acceleration and angular velocity (jerk) in the Y direction	|	Time	|	Numeric
+17	|	tBodyAccJerk.mean...Z	|	the mean body linear acceleration and angular velocity (jerk) in the Z direction	|	Time	|	Numeric
+18	|	tBodyAccJerk.std...X	|	the standard deviation body linear acceleration and angular velocity (jerk) in the X direction	|	Time	|	Numeric
+19	|	tBodyAccJerk.std...Y	|	the standard deviation body linear acceleration and angular velocity (jerk) in the Y direction	|	Time	|	Numeric
+20	|	tBodyAccJerk.std...Z	|	the standard deviation body linear acceleration and angular velocity (jerk) in the Z direction	|	Time	|	Numeric
+21	|	tBodyGyro.mean...X	|	the mean body gyroscope measures in the X direction	|	Time	|	Numeric
+22	|	tBodyGyro.mean...Y	|	the mean body gyroscope measures in the Y direction	|	Time	|	Numeric
+23	|	tBodyGyro.mean...Z	|	the mean body gyroscope measures in the Z direction	|	Time	|	Numeric
+24	|	tBodyGyro.std...X	|	the standard deviation body gyroscope measures in the X direction	|	Time	|	Numeric
+25	|	tBodyGyro.std...Y	|	the standard deviation body gyroscope measures in the Y direction	|	Time	|	Numeric
+26	|	tBodyGyro.std...Z	|	the standard deviation body gyroscope measures in the Z direction	|	Time	|	Numeric
+27	|	tBodyGyroJerk.mean...X	|	the mean body linear acceleration and angular velocity measures from the gyroscope (jerk) in the X direction	|	Time	|	Numeric
+28	|	tBodyGyroJerk.mean...Y	|	the mean body linear acceleration and angular velocity measures from the gyroscope (jerk) in the Y direction	|	Time	|	Numeric
+29	|	tBodyGyroJerk.mean...Z	|	the mean body linear acceleration and angular velocity measures from the gyroscope (jerk) in the Z direction	|	Time	|	Numeric
+30	|	tBodyGyroJerk.std...X	|	the standard deviation body linear acceleration and angular velocity measures from the gyroscope (jerk) in the X direction	|	Time	|	Numeric
+31	|	tBodyGyroJerk.std...Y	|	the standard deviation body linear acceleration and angular velocity measures from the gyroscope (jerk) in the Y direction	|	Time	|	Numeric
+32	|	tBodyGyroJerk.std...Z	|	the standard deviation body linear acceleration and angular velocity measures from the gyroscope (jerk) in the Z direction	|	Time	|	Numeric
+33	|	tBodyAccMag.mean..	|	the mean body accelerometer magnitude	|	Time	|	Numeric
+34	|	tBodyAccMag.std..	|	the standard deviation body accelerometer magnitude	|	Time	|	Numeric
+35	|	tGravityAccMag.mean..	|	the mean gravity accelerometer magnitude	|	Time	|	Numeric
+36	|	tGravityAccMag.std..	|	the standard deviation gravity accelerometer magnitude	|	Time	|	Numeric
+37	|	tBodyAccJerkMag.mean..	|	the mean body linear acceleration and angular velocity (jerk) magnitude	|	Time	|	Numeric
+38	|	tBodyAccJerkMag.std..	|	the standard deviation body linear acceleration and angular velocity (jerk) magnitude	|	Time	|	Numeric
+39	|	tBodyGyroMag.mean..	|	the mean body gyroscope magnitude	|	Time	|	Numeric
+40	|	tBodyGyroMag.std..	|	the standard deviation body gyroscope magnitude	|	Time	|	Numeric
+41	|	tBodyGyroJerkMag.mean..	|	the mean body linear acceleration and angular velocity magnitude from the gyroscope (jerk)	|	Time	|	Numeric
+42	|	tBodyGyroJerkMag.std..	|	the standard deviation body linear acceleration and angular velocity magnitude from the gyroscope (jerk)	|	Time	|	Numeric
+43	|	fBodyAcc.mean...X	|	the mean body accelerometer measures in the X direction	|	Frequency	|	Numeric
+44	|	fBodyAcc.mean...Y	|	the mean body accelerometer measures in the Y direction	|	Frequency	|	Numeric
+45	|	fBodyAcc.mean...Z	|	the mean body accelerometer measures in the Z direction	|	Frequency	|	Numeric
+46	|	fBodyAcc.std...X	|	the standard deviation body accelerometer measures in the X direction	|	Frequency	|	Numeric
+47	|	fBodyAcc.std...Y	|	the standard deviation body accelerometer measures in the Y direction	|	Frequency	|	Numeric
+48	|	fBodyAcc.std...Z	|	the standard deviation body accelerometer measures in the Z direction	|	Frequency	|	Numeric
+49	|	fBodyAcc.meanFreq...X	|	the mean frequency body accelerometer measures in the X direction	|	Frequency	|	Numeric
+50	|	fBodyAcc.meanFreq...Y	|	the mean frequency body accelerometer measures in the Y direction	|	Frequency	|	Numeric
+51	|	fBodyAcc.meanFreq...Z	|	the mean frequency body accelerometer measures in the Z direction	|	Frequency	|	Numeric
+52	|	fBodyAccJerk.mean...X	|	the mean body linear acceleration and angular velocity (jerk) in the X direction	|	Frequency	|	Numeric
+53	|	fBodyAccJerk.mean...Y	|	the mean body linear acceleration and angular velocity (jerk) in the Y direction	|	Frequency	|	Numeric
+54	|	fBodyAccJerk.mean...Z	|	the mean body linear acceleration and angular velocity (jerk) in the Z direction	|	Frequency	|	Numeric
+55	|	fBodyAccJerk.std...X	|	the standard deviation body linear acceleration and angular velocity (jerk) in the X direction	|	Frequency	|	Numeric
+56	|	fBodyAccJerk.std...Y	|	the standard deviation body linear acceleration and angular velocity (jerk) in the Y direction	|	Frequency	|	Numeric
+57	|	fBodyAccJerk.std...Z	|	the standard deviation body linear acceleration and angular velocity (jerk) in the Z direction	|	Frequency	|	Numeric
+58	|	fBodyAccJerk.meanFreq...X	|	the mean frequency body linear acceleration and angular velocity (jerk) in the X direction	|	Frequency	|	Numeric
+59	|	fBodyAccJerk.meanFreq...Y	|	the mean frequency body linear acceleration and angular velocity (jerk) in the Y direction	|	Frequency	|	Numeric
+60	|	fBodyAccJerk.meanFreq...Z	|	the mean frequency body linear acceleration and angular velocity (jerk) in the Z direction	|	Frequency	|	Numeric
+61	|	fBodyGyro.mean...X	|	the mean body gyroscope measures in the X direction	|	Frequency	|	Numeric
+62	|	fBodyGyro.mean...Y	|	the mean body gyroscope measures in the Y direction	|	Frequency	|	Numeric
+63	|	fBodyGyro.mean...Z	|	the mean body gyroscope measures in the Z direction	|	Frequency	|	Numeric
+64	|	fBodyGyro.std...X	|	the standard deviation body gyroscope measures in the X direction	|	Frequency	|	Numeric
+65	|	fBodyGyro.std...Y	|	the standard deviation body gyroscope measures in the Y direction	|	Frequency	|	Numeric
+66	|	fBodyGyro.std...Z	|	the standard deviation body gyroscope measures in the Z direction	|	Frequency	|	Numeric
+67	|	fBodyGyro.meanFreq...X	|	the mean frequency body gyroscope measures in the X direction	|	Frequency	|	Numeric
+68	|	fBodyGyro.meanFreq...Y	|	the mean frequency body gyroscope measures in the Y direction	|	Frequency	|	Numeric
+69	|	fBodyGyro.meanFreq...Z	|	the mean frequency body gyroscope measures in the Z direction	|	Frequency	|	Numeric
+70	|	fBodyAccMag.mean..	|	the mean magnitude of body accelerometer measures	|	Frequency	|	Numeric
+71	|	fBodyAccMag.std..	|	the standard deviation magnitude of body accelerometer measures	|	Frequency	|	Numeric
+72	|	fBodyAccMag.meanFreq..	|	the mean frequency magnitude of body accelerometer measures	|	Frequency	|	Numeric
+73	|	fBodyBodyAccJerkMag.mean..	|	the mean magnitude of body linear accelerometer measures and angular velocity (jerk)	|	Frequency	|	Numeric
+74	|	fBodyBodyAccJerkMag.std..	|	the standard deviation magnitude of body linear accelerometer measures and angular velocity (jerk)	|	Frequency	|	Numeric
+75	|	fBodyBodyAccJerkMag.meanFreq..	|	the mean frequency magnitude of body linear accelerometer measures and angular velocity (jerk)	|	Frequency	|	Numeric
+76	|	fBodyBodyGyroMag.mean..	|	the mean magnitude of body linear gyroscope measures	|	Frequency	|	Numeric
+77	|	fBodyBodyGyroMag.std..	|	the standard deviation magnitude of body linear gyroscope measures	|	Frequency	|	Numeric
+78	|	fBodyBodyGyroMag.meanFreq..	|	the mean frequency magnitude of body linear gyroscope measures	|	Frequency	|	Numeric
+79	|	fBodyBodyGyroJerkMag.mean..	|	the mean magnitude of body linear gyroscope measures and angular velocity (jerk)	|	Frequency	|	Numeric
+80	|	fBodyBodyGyroJerkMag.std..	|	the standard deviation magnitude of body linear gyroscope measures and angular velocity (jerk)	|	Frequency	|	Numeric
+81	|	fBodyBodyGyroJerkMag.meanFreq..	|	the mean frequency magnitude of body linear gyroscope measures and angular velocity (jerk)	|	Frequency	|	Numeric
 tBodyAcc-std()-X :The standard deviation of body acceleration in the X direction
 tBodyAcc-std()-Y :The standard deviation of body acceleration in the Y direction
 tBodyAcc-std()-Z :The standard deviation of body acceleration in the Z direction
