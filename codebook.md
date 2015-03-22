@@ -99,9 +99,7 @@ Column	|	Variable Name	|	Description	|	Units	|	Type
 79	|	fBodyBodyGyroJerkMag.mean..	|	the mean magnitude of body linear gyroscope measures and angular velocity (jerk)	|	Frequency	|	Numeric
 80	|	fBodyBodyGyroJerkMag.std..	|	the standard deviation magnitude of body linear gyroscope measures and angular velocity (jerk)	|	Frequency	|	Numeric
 81	|	fBodyBodyGyroJerkMag.meanFreq..	|	the mean frequency magnitude of body linear gyroscope measures and angular velocity (jerk)	|	Frequency	|	Numeric
-tBodyAcc-std()-X :The standard deviation of body acceleration in the X direction
-tBodyAcc-std()-Y :The standard deviation of body acceleration in the Y direction
-tBodyAcc-std()-Z :The standard deviation of body acceleration in the Z direction
+
 
 ******************************************************************************************
 
